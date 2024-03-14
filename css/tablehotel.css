@@ -1,0 +1,16 @@
+table{
+    border: 1px solid #ffffff;
+    margin-left: 3%;
+    width: 100%;
+    
+}
+th,td{
+    border: 1px solid #ffffff;
+    padding: 2rem;
+}
+th{
+    text-align: center;
+}
+thead,tfoot{
+    background-color: rgb(35, 78, 66);
+}
