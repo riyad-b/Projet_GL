@@ -72,7 +72,7 @@
 		<div class="gtco-container">
 			<div class="row" style="color:rgb(143, 244, 200);">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2 style="color: rgb(143, 244, 200);">Most Popular Destination</h2>
+					<h2 style="color: rgb(143, 244, 200);"></h2>
 					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.
 						Odit ab aliquam dolor eius.</p>
 				</div>
@@ -127,28 +127,27 @@
 			
 			<!-- Header of the page end -->
 			<main>
-			<section class="wrapper2">
-				<div class="form signup">
-					<header>Signup</header>
-					<form action="#">
-						<input type="text" placeholder="id " required />
-                        <input type="text" placeholder="name rntreprise" required />
-						<input type="text" placeholder="Email " required />
-						<input type="password" placeholder="Password" required />
-						<input type="confermpassword" placeholder="confermPassword" required />
-						<input type="adresse" placeholder="adress" required />
-						<input type="tel" placeholder="Phone Number" required />
-                        <input type="file" id="avatar" name="avatar" accept=".docx ,.pdf"/>
-						<div class="checkbox">
-							<input type="checkbox" id="signupCheck" />
-							<label for="signupCheck">I accept all terms & conditions</label>
-						</div>
-						<input type="submit" value="Signup" />
-					</form>
-				</div>
-
+				<section class="wrapper2">
+					<div class="form signup">
+						<header>Signup</header>
+						<form action="signupenter.php" method="post" enctype="multipart/form-data"> <!-- Specify the action, method, and enctype for the form -->
+							<input type="text" name="id" placeholder="ID" required /> <!-- Updated input field name -->
+							<input type="text" name="name_enterprise" placeholder="Name of Enterprise" required /> <!-- Updated input field name -->
+							<input type="email" name="email" placeholder="Email" required /> <!-- Updated input field name -->
+							<input type="password" name="password" placeholder="Password" required />
+							<input type="password" name="confirm_password" placeholder="Confirm Password" required />
+							<input type="text" name="address" placeholder="Address" required />
+							<input type="tel" name="phone" placeholder="Phone Number" required />
+							<input type="file" id="avatar" name="avatar" accept=".docx, .pdf" required /> <!-- Updated input field name and added required attribute -->
+							<div class="checkbox">
+								<input type="checkbox" id="signupCheck" required />
+								<label for="signupCheck">I accept all terms & conditions</label>
+							</div>
+							<input type="submit" value="Signup" />
+						</form>
+					</div>
+				</section>
 				
-			</section>
 			
 			</main>
 			<footer id="footer" style="background-image: url(images/4712892.jpg);">
